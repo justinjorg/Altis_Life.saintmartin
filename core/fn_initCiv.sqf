@@ -6,6 +6,11 @@
     Description:
     Initializes the civilian.
 */
+
+if (life_blacklisted) exitWith {
+    ["Blacklisted",false,true] call BIS_fnc_endMission;
+    sleep 30;
+};
 waitUntil {!(isNull (findDisplay 46))};
 if (life_is_alive && !life_is_arrested) then {
     /* Spawn at our last position */
