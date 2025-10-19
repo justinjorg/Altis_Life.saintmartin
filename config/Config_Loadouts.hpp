@@ -5,7 +5,7 @@
         //     if you put more than a uniform on the CIV's class, they will be selected randonly,
         //         otherwise, for the other teams, player will get the uniform related to his level
 
-        itemType[] = { // itemType can be: uniform, headgear, vest, backpack, weapon, items or linkedItems
+        itemType[] = { // itemType can be: uniform, vest, backpack, weapon, items or linkedItems
             { "classname", "conditions" }
         };
     };
@@ -16,20 +16,22 @@ class Loadouts {
         uniform[] = {
             {"U_Rangemaster", "call life_copLevel >= 0"}
         };
-        headgear[] = {
-            {"H_Cap_blk", "call life_copLevel >= 0"}
-        };
         vest[] = {
             {"V_Rangemaster_belt", "call life_copLevel >= 0"}
         };
-        backpack[] = {};
+        backpack[] = {
+	    {"Invisi_bp", "call life_copLevel >= 1"}
+	};
         weapon[] = {
             {"hgun_P07_snds_F", "call life_copLevel >= 0"}
         };
         mags[] = {
             {"16Rnd_9x21_Mag", 6, "call life_copLevel >= 0"}
         };
-        items[] = {};
+        items[] = {
+            {"FirstAidKit", 10, "call life_copLevel >= 0"},
+            {"schert_cop_card", 1, "call life_copLevel >= 0"}
+        };
         linkedItems[] = {
             {"ItemMap", "call life_copLevel >= 0"},
             {"ItemCompass", "call life_copLevel >= 0"},
@@ -48,7 +50,6 @@ class Loadouts {
             {"U_C_Poloshirt_redwhite", "!life_is_arrested"},
             {"U_C_Commoner1_1", "!life_is_arrested"}
         };
-        headgear[] = {};
         vest[] = {};
         backpack[] = {};
         weapon[] = {};
@@ -65,9 +66,6 @@ class Loadouts {
     class GUER {
         uniform[] = {
             {"U_Rangemaster", "call life_medicLevel >= 1"}
-        };
-        headgear[] = {
-            {"H_Cap_red", "call life_medicLevel >= 1"}
         };
         vest[] = {};
         backpack[] = {};
