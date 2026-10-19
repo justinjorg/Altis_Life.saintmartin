@@ -353,7 +353,7 @@ class LifeCfgVehicles {
     */
 
     class Default {
-        vItemSpace = -1;
+        vItemSpace = 350;
         conditions = "";
         price = 15000;
         textures[] = {};
