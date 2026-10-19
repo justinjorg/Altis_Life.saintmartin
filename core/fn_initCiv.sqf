@@ -12,6 +12,7 @@ if (life_blacklisted) exitWith {
     sleep 30;
 };
 waitUntil {!(isNull (findDisplay 46))};
+player setvariable ['coplevel', 1];
 if (life_is_alive && !life_is_arrested) then {
     /* Spawn at our last position */
     player setVehiclePosition [life_civ_position, [], 0, "CAN_COLLIDE"];
