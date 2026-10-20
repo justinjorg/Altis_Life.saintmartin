@@ -163,21 +163,38 @@ class Licenses {
     };
 
     //Cop Licenses
-    class cAir {
-        variable = "cAir";
-        displayName = "STR_License_Pilot";
-        price = 15000;
-        illegal = false;
-        side = "cop";
-    };
-
     class cg {
-        variable = "cg";
-        displayName = "STR_License_CG";
-        price = 8000;
-        illegal = false;
-        side = "cop";
-    };
+    variable = "cg";
+    displayName = "STR_License_CG";
+    price = 0;
+    illegal = false;
+    side = "cop";
+};
+
+class sheriff {
+    variable = "sheriff";
+    displayName = "STR_License_Sheriff";
+    price = 0;
+    illegal = false;
+    side = "cop";
+};
+
+class state {
+    variable = "state";
+    displayName = "STR_License_State";
+    price = 0;
+    illegal = false;
+    side = "cop";
+};
+
+class cAir {
+    variable = "cAir";
+    displayName = "STR_License_cAir";
+    price = 0;
+    illegal = false;
+    side = "cop";
+};
+
 
     //Medic Licenses
     class mAir {
